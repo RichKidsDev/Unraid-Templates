@@ -1,2 +1,2 @@
 # Unraid-Templates
-Storage for new templates
+Storage for new Unraid templates
