@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>igotify</Name>
+  <Repository>ghcr.io/androidseb25/igotify-notification-assist:latest</Repository>
+  <Registry>https://ghcr.io/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+    <Overview>
+iGotify Notification Assistant is a lightweight service that complements Gotify Server by decrypting messages and triggering push notifications to iOS devices via Apple's APNs. This container is essential for enabling push notifications within the iOS app.
+
+Setup Instructions:
+1. First, install and configure the official Gotify Server (Docker).
+2. Install iGotify.
+3. Ensure compatibility and proper configuration with NGINX Proxy Manager.
+
+This setup has been tested and confirmed to work effectively with NGINX Proxy Manager, ensuring a smooth operation for delivering notifications.
+    </Overview>
+  <Category>Network:Messenger</Category>
+  <WebUI>http://[IP]:[PORT:8681]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/RichKidsDev/Unraid-Templates/blob/main/iGotify/igotify-logo-small.png?raw=true</Icon>
+  <ExtraParams>--security-opt no-new-privileges:true --pull always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1719907200</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port 1" Target="8080" Default="8681" Mode="tcp" Description="External port 8681 mapped to container port 8080" Type="Port" Display="always" Required="true" Mask="false">8681</Config>
+  <Config Name="Volume 1" Target="/app/data" Default="/mnt/user/appdata/igotify/api-data/" Mode="rw" Description="Volume for API data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/igotify/api-data/</Config>
+  <Config Name="Gotify URL" Target="GOTIFY_URL" Default="http://gotify:80" Mode="" Description="URL to the Gotify server (do not change if you are using the official Gotify container)" Type="Variable" Display="always" Required="true" Mask="false">http://gotify:80</Config>
+</Container>
