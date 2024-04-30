@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>igotify</Name>
+  <Name>iGotify</Name>
   <Repository>ghcr.io/androidseb25/igotify-notification-assist:latest</Repository>
   <Registry>https://ghcr.io/</Registry>
   <Network>bridge</Network>
