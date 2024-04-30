@@ -7,8 +7,8 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
+  <Support>https://forums.unraid.net/topic/163766-support-grafgenixs-igotify</Support>
+  <Project>https://github.com/androidseb25/iGotify-Notification-Assistent</Project>
     <Overview>
 iGotify Notification Assistant is a lightweight service that complements Gotify Server by decrypting messages and triggering push notifications to iOS devices via Apple's APNs. This container is essential for enabling push notifications within the iOS app.
 
