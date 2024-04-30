@@ -20,7 +20,7 @@ Setup Instructions:
 This setup has been tested and confirmed to work effectively with NGINX Proxy Manager, ensuring a smooth operation for delivering notifications.
     </Overview>
   <Category>Network:Messenger</Category>
-  <WebUI>http://[IP]:[PORT:8681]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/RichKidsDev/Unraid-Templates/blob/main/iGotify/igotify-logo-small.png?raw=true</Icon>
   <ExtraParams>--security-opt no-new-privileges:true --pull always</ExtraParams>
