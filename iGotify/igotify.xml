@@ -16,6 +16,7 @@ Setup Instructions:
 1. First, install and configure the official Gotify Server (Docker).
 2. Install iGotify.
 3. Ensure compatibility and proper configuration with NGINX Proxy Manager.
+Additionally, ensure that the Gotify container has the environment variable TZ=UTC set and added manually.
 
 This setup has been tested and confirmed to work effectively with NGINX Proxy Manager, ensuring a smooth operation for delivering notifications.
     </Overview>
