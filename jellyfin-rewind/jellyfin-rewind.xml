@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Jellyfin-Rewind</Name>
+  <Repository>chaphasilor/jellyfin-rewind:latest</Repository>
+  <Registry>https://hub.docker.com/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/183068-support-grafgenixs-jellyfin-rewind/</Support>
+  <Project>https://github.com/Chaphasilor/jellyfin-rewind</Project>
+  <Overview>
+Jellyfin-Rewind. A "Spotify Wrapped"-like app made for people who use Jellyfin for listening to music!
+
+The rewind feature is updated on December 31 each year to reflect the music statistics for the current year. Currently, the rewind for 2023 is available.
+
+Note: This tool is external to Jellyfin and cannot be directly integrated. Users need to log in with their username and password or API key to access their personalized rewind.
+
+Setup Instructions:
+1. Select a port during installation. The app works immediately afterward.
+2. If you want external access, NGINX Proxy Manager is recommended.
+
+This container is simple to use and provides a standalone service for music playback analysis and summary.
+  </Overview>
+  <Category>Media:Server Tools</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/RichKidsDev/Unraid-Templates/blob/main/jellyfin-rewind/jellyfin-rewind-logo1.png?raw=true</Icon>
+  <ExtraParams>--security-opt no-new-privileges:true --pull always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1734800400</DateInstalled>
+  <DonateText>Support the Developer</DonateText>
+  <DonateLink>https://github.com/sponsors/Chaphasilor</DonateLink>
+  <Requires/>
+  <Config Name="Host Port 1" Target="80" Default="8080" Mode="tcp" Description="External port mapped to container port 80" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+</Container>
