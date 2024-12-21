@@ -22,7 +22,7 @@ Setup Instructions:
 
 This container is simple to use and provides a standalone service for music playback analysis and summary.
   </Overview>
-  <Category>Media:Server Tools</Category>
+  <Category>Tools/Utilities</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/RichKidsDev/Unraid-Templates/blob/main/jellyfin-rewind/jellyfin-rewind-logo1.png?raw=true</Icon>
