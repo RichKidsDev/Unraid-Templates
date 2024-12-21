@@ -16,6 +16,12 @@ The rewind feature is updated on December 31 each year to reflect the music stat
 
 Note: This tool is external to Jellyfin and cannot be directly integrated. Users need to log in with their username and password or API key to access their personalized rewind.
 
+To enhance your rewind experience, it is highly recommended to install the **Playback Reporting** plugin on your Jellyfin server. This plugin tracks your playback history and provides better insights for your rewind. The installation process takes less than 2 minutes and requires admin access.
+
+**Important Tips for Playback Reporting Plugin:**
+- By default, the plugin stores only the last 3 months of playback data. It is advised to change this setting to store at least the last two years.
+- You can access the settings directly from your Jellyfin server and update the retention period.
+
 Setup Instructions:
 1. Select a port during installation. The app works immediately afterward.
 2. If you want external access, NGINX Proxy Manager is recommended.
