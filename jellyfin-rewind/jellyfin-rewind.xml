@@ -12,8 +12,10 @@
   <Overview>
 Jellyfin-Rewind. A "Spotify Wrapped"-like app made for people who use Jellyfin for listening to music!
 
-The rewind feature is updated on December 31 each year to reflect the music statistics for the current year. Currently, the rewind for 2024 is available.
+Jellyfin Rewind 2025 will launch on December 31st 2025.
 
+The rewind feature is updated on December 31 each year to reflect the music statistics for the current year. Currently, the rewind for 2024 is available.  
+    
 Note: This tool is external to Jellyfin and cannot be directly integrated. Users need to log in with their username and password or API key to access their personalized rewind.
 
 To enhance your rewind experience, it is highly recommended to install the **Playback Reporting** plugin on your Jellyfin server. This plugin tracks your playback history and provides better insights for your rewind. The installation process takes less than 2 minutes and requires admin access.
