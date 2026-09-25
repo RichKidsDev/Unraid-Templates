@@ -21,7 +21,7 @@ Setup Instructions:
   <Category>MediaApp:Photos</Category>
   <WebUI>http://[IP]:[PORT:7211]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/RichKidsDev/Unraid-Templates/blob/main/immich-folio/immich-folio-logo.png?raw=true</Icon>
+  <Icon>https://raw.githubusercontent.com/RichKidsDev/Unraid-Templates/refs/heads/main/immich-folio/immich-folio-logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
