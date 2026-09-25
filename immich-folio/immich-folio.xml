@@ -21,7 +21,7 @@ Setup Instructions:
   <Category>MediaApp:Photos Network:Web</Category>
   <WebUI>http://[IP]:[PORT:7211]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/ralksta/immich-folio/main/public/favicon.ico</Icon>
+  <Icon>https://github.com/RichKidsDev/Unraid-Templates/blob/main/immich-folio/immich-folio-logo.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
