@@ -18,7 +18,7 @@ Setup Instructions:
 3. Setup Wizard: Open the WebUI and enter your Setup Token, Immich URL, API Key, and set your Admin Password during the first-time setup process.
 4. ADMIN_PASSWORD (Optional): Leave this blank during initial setup. You can populate this variable later if you ever need to reset or override your Admin Password via container environment variables.
   </Overview>
-  <Category>MediaApp:Photos Network:Web</Category>
+  <Category>MediaApp:Photos</Category>
   <WebUI>http://[IP]:[PORT:7211]</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/RichKidsDev/Unraid-Templates/blob/main/immich-folio/immich-folio-logo.png?raw=true</Icon>
