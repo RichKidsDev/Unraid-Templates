@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>immich-folio</Name>
+  <Repository>ghcr.io/ralksta/immich-folio:latest</Repository>
+  <Registry>https://ghcr.io/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/200691-support-grafgenixs-immich-folio/</Support>
+  <Project>https://github.com/ralksta/immich-folio</Project>
+  <Overview>
+Immich Folio is a lightweight, high-performance web application designed to present and showcase photos from an existing Immich instance in an elegant gallery view.
+
+Setup Instructions:
+1. AUTH_SECRET: You MUST enter a long, random string for "Auth Secret". This is required for session security and encryption.
+2. FIRST RUN SETUP TOKEN: When you start the container for the first time, check the Container Logs in Unraid. You will find a generated Setup Token there, which is REQUIRED to complete the initial setup wizard in your browser!
+3. Setup Wizard: Open the WebUI and enter your Setup Token, Immich URL, API Key, and set your Admin Password during the first-time setup process.
+4. ADMIN_PASSWORD (Optional): Leave this blank during initial setup. You can populate this variable later if you ever need to reset or override your Admin Password via container environment variables.
+  </Overview>
+  <Category>MediaApp:Photos Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:7211]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ralksta/immich-folio/main/public/favicon.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  
+  <Config Name="WebUI Port" Target="7211" Default="7211" Mode="tcp" Description="Port to access Immich Folio (Internal and External: 7211)" Type="Port" Display="always" Required="true" Mask="false">7211</Config>
+  
+  <Config Name="Appdata Path" Target="/app/content" Default="/mnt/user/appdata/immich-folio/content" Mode="rw" Description="Storage location for gallery configuration and content (where the setup wizard saves its data)." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/immich-folio/content</Config>
+  
+  <Config Name="Auth Secret" Target="AUTH_SECRET" Default="" Mode="" Description="Required! Provide a long, random string (e.g., a 32-character secret) used for session security." Type="Variable" Display="always" Required="true" Mask="true">PleaseEnterALongRandomStringHere12345!</Config>
+
+  <Config Name="Admin Password" Target="ADMIN_PASSWORD" Default="" Mode="" Description="Optional. Leave blank on initial setup (you will create your password in the Setup Wizard). Use this variable later if you need to reset your admin password." Type="Variable" Display="always" Required="false" Mask="true"></Config>
+
+</Container>
