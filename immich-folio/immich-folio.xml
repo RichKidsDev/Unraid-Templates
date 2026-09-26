@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>immich-folio</Name>
   <Repository>ghcr.io/ralksta/immich-folio:latest</Repository>
-  <Registry>https://ghcr.io/</Registry>
+  <Registry>ghcr.io/ralksta/immich-folio</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
