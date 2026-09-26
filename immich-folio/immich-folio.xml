@@ -7,6 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
+  <ReadMe>https://github.com/ralksta/immich-folio/blob/main/README.md</ReadMe>
   <Support>https://forums.unraid.net/topic/200691-support-grafgenixs-immich-folio/</Support>
   <Project>https://github.com/ralksta/immich-folio</Project>
   <Overview>
